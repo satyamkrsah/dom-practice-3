@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+main {
+    height: 100%;
+    width: 100%;
+     background: #C6FFDD;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #f7797d, #FBD786, #C6FFDD);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #f7797d, #FBD786, #C6FFDD); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.box {
+    /* height: 300px; */
+    width: 300px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(32, 7, 224);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    border: 2px solid rgb(13, 80, 175);
+
+
+}
+
+.box div {
+    position: relative;
+    overflow: hidden;
+}
+
+.box img {
+    height: 350px;
+    width: 280px;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.box h2 {
+    font-size: 20px;
+    text-align: center;
+    text-shadow: -2px 4px 4px rgb(32, 35, 81);
+
+}
+
+.box i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 50px;
+    opacity: 0;
+    background-image: url(https://t3.ftcdn.net/jpg/01/14/77/58/360_F_114775804_4yfG9qbKp1NlF1RLo4MUlGIVj9MWhnnc.jpg);
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+
+    transform: translate(-50%, -50%) scale(0) rotate(-60deg);
+    transition: all cubic-bezier(.65, 1, .77, 1.44) 0.5s;
+}
